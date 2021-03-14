@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    debase (0.2.4.1)
+      debase-ruby_core_source (>= 0.10.2)
+    debase-ruby_core_source (0.10.12)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.7)
@@ -9,6 +12,9 @@ GEM
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rake (13.0.3)
+    ruby-debug-ide (0.7.2)
+      rake (>= 0.8.1)
     ruby2_keywords (0.0.4)
     sinatra (2.1.0)
       mustermann (~> 1.0)
@@ -18,10 +24,13 @@ GEM
     tilt (2.0.10)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
+  debase
   puma
+  ruby-debug-ide
   sinatra
 
 BUNDLED WITH
